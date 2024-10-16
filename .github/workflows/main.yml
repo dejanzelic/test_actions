@@ -1,6 +1,8 @@
 name: hello-world-example
 on:
-  push:
+  pull_request_target:
+    types:
+      - labeled
 jobs:
   run-shell:
     runs-on: ubuntu-latest
