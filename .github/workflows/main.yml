@@ -1,0 +1,13 @@
+name: hello-world-example
+on:
+  push:
+jobs:
+  run-shell:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Run shell script
+        run: ./script.sh
